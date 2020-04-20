@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
+    <title>WT-FORM-CHECK-EXAMPLE</title>
+    <style>
+        .form {
+            width: 50%;
+            margin: 5% auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <form class="form"  @submit.prevent>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">姓名</label>
+                    <input type="text" class="form-control" id="name" placeholder="姓名" v-model="form.name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="password">密码</label>
+                    <input type="password" class="form-control" id="password" placeholder="密码" v-model="form.password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mobile">手机号</label>
+                <input type="text" class="form-control" id="mobile" placeholder="手机号" v-model="form.mobile">
+            </div>
+            <div class="form-group">
+                <label for="age">年龄</label>
+                <input type="number" class="form-control" id="age" placeholder="年龄" v-model="form.age">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="city">城市</label>
+                    <input type="text" class="form-control" id="city" placeholder="城市" v-model="form.city">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="qq">个人主页</label>
+                    <input type="url" class="form-control" id="url" placeholder="个人主页" v-model="form.url">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary px-5" @click="submit">提交</button>
+        </form>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

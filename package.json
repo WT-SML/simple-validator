@@ -1,0 +1,11 @@
+{
+  "name": "wt-form-check",
+  "version": "1.0.0",
+  "description": "Extensible form validator for rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wt",
+  "license": "ISC"
+}
