@@ -1,6 +1,6 @@
 {
   "name": "wt-form-check",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Extensible form validator for rules",
   "main": "dist/index.js",
   "scripts": {
