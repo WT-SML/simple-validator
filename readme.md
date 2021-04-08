@@ -38,7 +38,7 @@ submit() {
 import { extend } from 'wt-form-check'
 
 let check = extend([
-     { reg: /iswt/, method: (rule, data) => parseInt(data) !== 100 ? { pass: false, msg: '数据必须是wutong' } : { pass: true } }
+     { reg: /iswt/, method: (rule, data) => parseInt(data) !== 100 ? { pass: false, msg: '数据必须是100' } : { pass: true } }
 ])
 
 submit() {

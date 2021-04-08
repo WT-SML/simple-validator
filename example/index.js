@@ -1,4 +1,4 @@
-import { default as check } from '../index.js'
+import { default as check } from '../dist/index.js'
 /* 需要扩展规则？ 请查看下面的例子 ，导入 extend 方法，调用这个方法将返回一个扩展规则后的check */
 // import { extend } from '../index.js'
 // let check = extend([

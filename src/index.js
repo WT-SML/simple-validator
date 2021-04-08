@@ -1,6 +1,5 @@
 import { required, minlength, maxlength, min, max, mobile, url, int } from './baseRule.js'
 const wtFormCheck = (formArr) => {
-  console.log(maps)
   clean()//初始化
   let result = []//定义验证结果集
   for (let formItem of formArr) {

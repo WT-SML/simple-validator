@@ -1,12 +1,23 @@
 {
   "name": "wt-form-check",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Extensible form validator for rules",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
   },
   "author": "wt",
-  "keywords": ["formcheck"],
-  "license": "ISC"
+  "keywords": [
+    "formcheck"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.13.10"
+  }
 }
